@@ -1,0 +1,561 @@
+body {
+  margin: 0;
+  font-family: "Roboto";
+}
+
+.clear-fix {
+  clear: both;
+}
+
+.active {
+  color: RGB(255, 48, 91);
+}
+
+ul {
+  margin: 0;
+  list-style: none;
+  background-color: rgb(51, 50, 50, 0.2);
+}
+
+ul li {
+  float: left;
+  padding: 20px;
+  font-size: 18px;
+}
+
+ul li.logo-name {
+  width: 40%;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: RGB(255, 254, 254);
+  transition: color 1s;
+}
+
+ul li a:hover {
+  color: RGB(255, 48, 91);
+}
+
+.header-container {
+  height: 100vh;
+  background-image: url("../images/header.jpeg");
+  background-attachment: fixed;
+  position: relative;
+}
+
+.main-header {
+  height: 100%;
+  width: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.main-header .content {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateY(50%);
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 24px;
+  color: white;
+}
+
+h1 {
+  font-size: 70px;
+  color: RGB(255, 48, 91);
+  margin: 20px;
+  font-family: "Source Sans 3", sans-serif;
+}
+
+.content .title {
+  margin: auto;
+  padding: 5px 10px;
+  width: max-content;
+  position: relative;
+}
+
+.header-container .content .animation{
+  border-right: solid RGB(255, 255, 255) 4px;
+  padding: 5px;
+  animation: wipe 1.8s infinite;
+  display: inline-block;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@keyframes wipe{
+  from{
+    width: 100px;
+  }
+  to{
+    width: 0;
+  }
+
+}
+
+
+/* section about */
+#about {
+  width: 90%;
+  margin: 30px auto;
+  padding: 30px 10px;
+  position: relative;
+}
+
+#about > div {
+  width: 50%;
+  float: left;
+}
+
+#about .image {
+  font-size: 0;
+}
+
+#about .image {
+  width: 50%;
+  margin: auto;
+  border: 10px solid rgb(51, 50, 50);
+  border-radius: 7px;
+  position: relative;
+}
+
+#about .image img {
+  border-radius: 7px;
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+/*
+#about .image .image-bg{
+  background-color: aqua;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 7px;
+  
+}*/
+
+#about .description {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translateX(50%);
+}
+
+.description .about-me {
+  border-bottom: 1px gray dashed;
+}
+
+.description .about-me .word-one {
+  border-left: 6px RGB(255, 48, 91) solid;
+  font-size: 34px;
+  color: #333;
+  padding: 0 10px;
+  font-weight: 500;
+}
+
+.description .personal-data {
+  width: 80%;
+  margin: 10px 0;
+}
+
+.description .personal-data p {
+  float: left;
+  width: 50%;
+  margin: 10px 0;
+}
+
+.description p {
+  color: gray;
+}
+
+.description p b {
+  color: #333;
+}
+
+.description .btns {
+  margin: 30px 0;
+}
+
+.description .btns a {
+  text-decoration: none;
+  color: white;
+  background-color: RGB(255, 48, 91);
+  padding: 15px 20px;
+  border-radius: 7px;
+}
+
+.description .btns a:hover {
+  background-color: RGB(236, 36, 3);
+}
+
+/*  services style */
+#services {
+  background-color: RGB(241, 241, 241);
+  text-align: center;
+  margin: 50px 0;
+  padding: 40px 0;
+}
+
+.head-line {
+  margin: 4px auto 0;
+  border: 1px solid RGB(255, 48, 91);
+  width: 7%;
+}
+
+.greater {
+  margin-bottom: 2px;
+  width: 15%;
+}
+
+#services .container {
+  width: 80%;
+  margin: 40px auto;
+}
+
+#services i {
+  color: RGB(255, 48, 91);
+  font-size: 36px;
+}
+
+h2 {
+  margin: 10px auto;
+  color: #333;
+  font-size: 40px;
+  text-align: center;
+}
+
+#services h3 {
+  margin: 15px auto;
+  color: #333;
+  font-size: 24px;
+}
+
+#services .container p {
+  margin: 15px auto;
+  color: gray;
+}
+
+#services .container .item {
+  float: left;
+  width: 25%;
+}
+
+#services .container .item div {
+  padding: 15px;
+  transition: font-size 1s;
+}
+
+#services .container .item div:hover {
+  background-color: white;
+}
+
+#services .container .item div:hover i {
+  font-size: 40px;
+}
+
+/* portofolio style */
+#portofolio {
+  text-align: center;
+}
+#portofolio .main-content {
+  width: 90%;
+  margin: 15px auto;
+}
+
+#portofolio .container {
+  width: 33.3333%;
+  float: left;
+}
+
+#portofolio .list > div {
+  margin: auto;
+  width: 90%;
+}
+
+#portofolio .list ul {
+  width: 35%;
+  margin: auto;
+  background-color: white;
+}
+
+#portofolio .list ul li {
+  margin: auto;
+  text-align: center;
+}
+
+#portofolio ul li a {
+  color: rgb(51, 50, 50);
+}
+
+#portofolio ul li a.active {
+  color: RGB(255, 48, 91);
+}
+
+#portofolio .item {
+  position: relative;
+  margin: 15px;
+}
+
+#portofolio .image {
+  font-size: 0;
+  width: 100%;
+}
+
+#portofolio .image img {
+  width: 100%;
+}
+
+#portofolio .icon {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 100%;
+  right: 100%;
+}
+
+#portofolio .icon i {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  opacity: 0;
+  color: RGB(255, 48, 91);
+}
+
+#portofolio .main-content > div:hover .icon {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#portofolio .main-content > div:hover .icon i {
+  opacity: 1;
+}
+
+#portofolio .numbers {
+  background-color: RGB(241, 241, 241);
+  margin: 30px auto;
+  padding: 30px;
+}
+
+#portofolio .numbers > div {
+  width: 90%;
+  margin: auto;
+}
+
+#portofolio .numbers .item {
+  width: 25%;
+  float: left;
+  margin: auto;
+  padding: 30px 0;
+}
+
+#portofolio .numbers .item div {
+  margin: 10px auto;
+}
+
+#portofolio .numbers .item i {
+  padding: 20px;
+  color: RGB(255, 48, 91);
+  font-size: 26px;
+}
+
+#portofolio .numbers .item .number {
+  color: rgb(51, 50, 50);
+  font-weight: 800;
+  font-size: 26px;
+}
+
+#portofolio .numbers .item .txt {
+  color: gray;
+  font-size: 16px;
+}
+
+/* feedback style */
+#testimonial {
+  margin: 30px auto;
+}
+
+#testimonial .content {
+  background-color: RGB(241, 241, 241);
+  width: 50%;
+  margin: 30px auto;
+  padding: 20px;
+  position: relative;
+}
+
+#testimonial .content .main > div {
+  float: left;
+}
+
+#testimonial .image {
+  width: 20%;
+  position: relative;
+  z-index: 3;
+}
+
+#testimonial .image img {
+  border-radius: 50%;
+  width: 100%;
+}
+
+#testimonial .description {
+  width: 70%;
+  margin-left: 20px;
+}
+
+#testimonial i {
+  color: RGB(241, 195, 13);
+}
+
+#testimonial span,
+#testimonial span i {
+  color: gray;
+}
+
+#testimonial .corner {
+  width: 0;
+  border-left: 200px solid RGB(255, 48, 91);
+  border-top: 200px solid rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(90deg);
+}
+
+/* blog style */
+#blog {
+  background-color: RGB(241, 241, 241);
+  margin: 40px auto;
+  padding: 30px;
+}
+
+#blog .content {
+  margin: 30px auto;
+}
+
+#blog .main {
+  width: 75%;
+  margin: auto;
+}
+
+#blog .content .item {
+  width: 33.33333333%;
+  float: left;
+}
+
+#blog .content .image {
+  font-size: 0;
+  padding: 10px 20px;
+}
+
+#blog .content .image img,
+#blog .content .image iframe {
+  width: 100%;
+}
+
+#blog .content .image iframe {
+  height: 183px;
+}
+
+#blog .content .description {
+  color: gray;
+  padding: 10px 20px;
+}
+
+#blog h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+#blog a {
+  text-decoration: none;
+  color: #333;
+}
+
+#blog h3 a:hover {
+  color: RGB(255, 48, 91);
+}
+
+/* contact style */
+#contact {
+  margin-top: 30px;
+}
+
+#contact .container {
+  width: 50%;
+  margin: 20px auto;
+  padding: 30px;
+}
+
+#contact .container form {
+  width: 90%;
+  margin: auto;
+}
+
+#contact .container input[name="name"],
+#contact .container input[name="email"] {
+  width: 40%;
+}
+
+#contact .container input[name="subject"],
+#contact textarea {
+  width: 90%;
+}
+
+#contact .container input,
+#contact textarea,
+#contact .container button {
+  font-size: 14px;
+  padding: 10px;
+  margin: 10px 20px;
+  border-radius: 7px;
+  border: 2px solid rgb(168, 157, 157);
+}
+
+#contact textarea {
+  resize: both;
+  overflow: auto;
+}
+
+#contact .container button {
+  background-color: RGB(255, 48, 91);
+  color: white;
+  padding: 15px;
+  width: 25%;
+  cursor: pointer;
+}
+
+#contact .container button:hover {
+  background-color: RGB(236, 36, 3);
+  
+}
+
+/* footer style */
+#footer{
+  background-color: #333;
+  height: 100px;
+  color: white;
+  margin-top: 30px;
+  padding-top: 50px;
+  font-size: 18px;
+  text-align: center;
+}
+
+#footer .icon a{
+  margin: 7px;
+  color: white;
+  background-color: #333;
+  
+}
